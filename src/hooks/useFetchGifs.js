@@ -3,7 +3,7 @@ import { getGifs } from '../helpers/getGifs';
 
 export const useFetchGifs = category => {
   const [state, setState] = useState({
-    data: [],
+    images: [],
     loading: true
   });
 
@@ -20,7 +20,7 @@ export const useFetchGifs = category => {
   const getImages = async() => {
     const images = await getGifs(category);
     setState({
-      data: images,
+      images,
       loading: false
     });
   }

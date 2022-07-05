@@ -3,7 +3,7 @@ import { useFetchGifs } from '../hooks/useFetchGifs';
 import { GifGridItem } from './GifGridItem';
 
 export const GifGrid = ({ category }) => {
-  const { data:images, loading } = useFetchGifs(category);
+  const { images, loading } = useFetchGifs(category);
 
   return (
     <>
